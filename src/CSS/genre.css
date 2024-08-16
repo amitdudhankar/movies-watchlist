@@ -1,0 +1,54 @@
+/* General Page Styles */
+.genres-page {
+    padding: 20px; /* Adjust padding as needed */
+    background-image: url("https://wallpapercave.com/wp/wp2578195.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure content fits within viewport */
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding-top: 60px; /* Adjust padding to accommodate fixed navbar */
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Genres List Styles */
+  .genres-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .genres-list li {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .genres-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .genres-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .no-results {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* Adjust text color as needed */
+  }
+  

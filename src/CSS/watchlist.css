@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* General WatchList Styles */
+.watchlist-page {
+  padding: 20px;
+  padding-top: 60px;
+  background-image: url("https://wallpapercave.com/wp/wp2578195.jpg");
+  color: black;
+  background-size: cover;
+  min-height: 100vh; /* Ensure full viewport height */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+.watchlist-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white; /* Ensure title text is visible against the background */
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto 20px; /* Center container and add bottom margin */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Movies List Styles */
+.movies-list {
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.watchlist-card {
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.watchlist-card:hover {
+  transform: translateY(-5px); /* Adjust hover effect */
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px; /* Set a fixed height for the image */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.remove-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* No Results Message */
+p.no-results {
+  text-align: center;
+  margin-top: 20px;
+}
+/* ***************************** filter buttons ********************************* */
+/* Button Styles */
+.btn1,
+.btn2,
+.btn3 {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  color: #555;
+}
+
+.btn1::after,
+.btn2::after,
+.btn3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.btn1:hover::after,
+.btn2:hover::after,
+.btn3:hover::after {
+  width: calc(
+    100% - 30px
+  ); /* Adjust width to match button width minus padding */
+  right: 16px; /* Adjust left position to match button padding */
+}

@@ -1,3 +1,7 @@
+/* index.css or App.css */
+@import "~swiper/swiper-bundle.css";
+
+
 .App {
   text-align: center;
 }
